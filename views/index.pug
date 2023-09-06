@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Palindrome Checker
+  form(method="POST" action="/")
+    label(for="userText") Enter your text here:
+    br
+    input(type="text" id="userText" name="userText" value=`${phrase}`)
+    br
+    br
+    button(type="submit") Submit
+  if message
+    p=message
+  h4 Palindrome Examples:
+  ul
+    li madam, I'm Adam
+    li step on no pets
+    li never odd or even
