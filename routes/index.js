@@ -21,11 +21,9 @@ function checkPalindrome(phrase){
   let temp = phrase.split("");
   temp = temp.reverse();
   temp = temp.join("");
-  flip = temp.reverse();
 
   if (phrase.toLowerCase().replace(/[^a-zA-Z0-9]/g, "") === temp.toLowerCase().replace(/[^a-zA-Z0-9]/g, "")) {
     return true
-    return `${flip}`
   }
   else {
     return false
